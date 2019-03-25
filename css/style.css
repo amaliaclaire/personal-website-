@@ -862,7 +862,12 @@ nav ul li a {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /* height: 300px; /* Should be removed. Only for demonstration */ */
+}
+
+.portfolio-title {
+	text-align: center;
+	padding: 25px;
 }
 
 /* Clear floats after the columns */
@@ -870,6 +875,20 @@ nav ul li a {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.portfolio-img{
+	max-width:50%;
+  max-height:50%;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-text {
+	text-align: center;
+	padding-top: 15px; 
 }
  /**
  -------------------------------------------------------
