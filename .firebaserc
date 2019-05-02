@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "amalia-fergin-personal-website",
+    "firebase deploy": "amalia-fergin-personal-website"
+  }
+}
