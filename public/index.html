@@ -1,65 +1,291 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+	<!-- meta tag -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title> Amalia Fergin</title>
+    <meta name="keywords" content="Portfolio, Clean, Personal, HTML5 Template">
+    <meta name="description" content="Belvita - Personal Portfolio Template">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.11.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.11.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.11.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.11.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.11.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400,400i,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<!-- Magnific Popup CSS -->
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<!-- Icon CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Main Stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Responsive css -->
+	<link href="css/responsive.css" rel="stylesheet">
+</head>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<div class="pre-loader">
+	  <div class="spinner"></div>
+	</div>
+
+	<!-- Start Navbar -->
+	<nav id="main-nav">
+		<div class="row">
+			<div class="container">
+				<div class="logo">
+
+				<a href="index.html"><h3>Amalia Fergin</h3></a>
+				</div>
+				<div class="responsive"><i class="fa fa-bars"></i></div>
+				<ul class="nav-menu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+
+	<!-- Start section header -->
+	<section id="header">
+		<div class="display-table">
+			<div class="table-cell">
+				<div class="container">
+					<div class="header-content">
+						<h2 class="cd-headline clip is-full-width">
+							<span class="cd-words-wrapper">
+								<b class="is-visible">Programmer.</b>
+								<b class="is-hidden">Web Designer.</b>
+								<b class="is-hidden">Freelancer.</b>
+
+							</span>
+						</h2>
+						<ul class="list-social">
+							<li><a href="https://github.com/amaliaclaire"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/amalia-fergin/"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="icon-scroll"></div>
+	</section>
+	<!-- End Header Section -->
+
+
+	<!-- Start Services Section -->
+	<div id="service" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="services-item">
+						<i class="fa fa-desktop" aria-hidden="true"></i>
+						<br>
+						<span>WEB DESIGN</span>
+						<p>I'll be able to give you structure in your applications by using HTML, CSS, SaSS, Bootstrap and Materalize that will look fantastic on multiple platforms.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+				<div class="services-item">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					<br>
+					 <span>DEVELOPMENT</span>
+					<p>I am able to use Reactjs, React Native, Express with Node.js, PostgreSQL and RESTful APIs to create a Fullstack Website or Mobile Application.</p>
+				</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+				<div class="services-item">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+					<br>
+					<span>TECH CONSULTATION</span>
+					<p>I'll be able to give you advice on how to navigate on your next project.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Services Section -->
+
+	<!-- Start About Section -->
+	<section id="about" class="section-padding">
+		<div class="container">
+			<div class="section-title">
+				<h6 class="heading-small">ABOUT AMALIA</h6>
+				<h2>WHO AM I?</h2>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-lg-4 ">
+					<div class="about-img">
+						<img src="images/coding1.jpg" class="img-responsive" alt="about-me">
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="about-description skills">
+						<p class="p-heading">Hey there! My name is Amalia! I dabble in Tech Influencing, Women In Tech Brand Ambassadorships, running fullspeed around Seattle, best dog Aunt, cooking and always keen to learn new things... And Sephora</p>
+							<div class="skill-part">
+								<div class="row">
+								  <div class="column" >
+								    <h3>Frontend</h3>
+										<div class="skill">
+											<h5 class="progress-title">Web Design</h5>
+											<h5 class="progress-title">HTML</h5>
+											<h5 class="progress-title">CSS</h5>
+											<h5 class="progress-title">Sass</h5>
+											<h5 class="progress-title">React Native</h5>
+											<h5 class="progress-title">React JS</h5>
+											<h5 class="progress-title">Angular</h5>
+											<h5 class="progress-title">Handlebars</h5>
+											<h5 class="progress-title">jQuery</h5>
+											<h5 class="progress-title">AJAX</h5>
+											<h5 class="progress-title">API Calls</h5>
+										</div>
+								  </div>
+								  <div class="column">
+								    <h3>Backend</h3>
+										<h5 class="progress-title">Node.js</h5>
+										<h5 class="progress-title">Express</h5>
+										<h5 class="progress-title">Django</h5>
+										<h5 class="progress-title">pSQL</h5>
+										<h5 class="progress-title">Express</h5>
+										<h5 class="progress-title">Heroku</h5>
+								  </div>
+								</div>
+								</div>
+							</div>
+						<div class="about-cv-btn"> <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=amaliafergin@gmail.com" class="btn-hover btn">Slide in those DM's<i class="fa fa-paper-plane"></i><span></span></a> <a href="file:///Users/amaliafergin/Downloads/Amalia%20Fergin%20Full%20Stack%20Resume.pdf" class="btn-hover btn">Resume<i class="fa fa-cloud-download"></i><span></span></a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Section -->
+
+
+
+	<!-- Start Personal Review Count Section -->
+	<section class="section-padding dark-review">
+		<div class="container">
+	</section>
+
+	<!-- End Personal Review Count Section -->
+
+	<div id="portfolio" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="services-item">
+						<img src="images/portfolio/meangirls.jpg" alt="">
+						<span>Mean Girls</span>
+						<p>Mean Girls Ipsum placeholder text.</p>
+						<ul>
+							<li>Date: Decemeber 2017<li>
+							<li>Category: UX/UI & Website/Mobile Design</li>
+							<lil><a href="http://mean-girls-ipsum.surge.sh/">Mean Girls</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+				<div class="services-item">
+					<span>Neverbored</span>
+					<img src="images/portfolio/neverbored.jpg" alt="">
+					<p>Activity Ideas Web Application. Users, reviews, and inventory are stored in a RESTful backend database.</p>
+					<ul>
+						<li>Date: July 2017<li>
+						<li>Category: Fullstack</li>
+						<lil><a href="https://never-bored.herokuapp.com">NeverBored</a></li>
+
+
+					</ul>
+				</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+				<div class="services-item">
+					<img src="images/portfolio/nocjournal.jpg" alt="">
+					 <span>NocJournal</span>
+					<p>I'll be able to give you advice on how to navigate on your next project.</p>
+					<ul>
+						<li>Date: June 2017<li>
+						<li>Category: Fullstack</li>
+						<lil><a href="https://github.com/andromeda111/NocJournal">NocJournal</a></li>
+
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Start Contact Sectoion -->
+	<section id="contact" class="section-padding">
+		<div class="container">
+			<div class="section-title">
+				<h6 class="heading-small">GET IN TOUCH</h6>
+				<h2>SAY HELLO</h2>
+			</div>
+
+<!-- contact info -->
+		<div>
+			<div class="col-md-12">
+				<div class="contact-details">
+					<h5>Email</h5>
+					<p>amalia.fergin@gmail.com</p>
+				</div>
+			</div>
+
+
+			<div class="contact-details">
+				<div class="socials-media">
+					<ul>
+						<li><a href="https://github.com/amaliaclaire"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/amalia-fergin/"><i class="fa fa-linkedin"></i></a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Contact Sectoion -->
+
+	<!-- Start Footer Section -->
+	<footer id="footer">
+		<div class="container">
+			<p></p>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- JQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl-carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific-popup -->
+	<script src="js/magnific-popup.min.js"></script>
+	<!-- Isotope -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<!-- Animated-headline -->
+	<script src="js/animated.headline.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counter-up -->
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- Template Main Javascript File -->
+	<script src="js/main.js"></script>
+</body>
 </html>
