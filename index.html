@@ -25,6 +25,12 @@
 	<link href="css/style.css" rel="stylesheet">
 	<!-- Responsive css -->
 	<link href="css/responsive.css" rel="stylesheet">
+
+	<link href="css/isotope_filter.css" rel="stylesheet">
+
+	<!-- added isotope filter -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -131,7 +137,7 @@
 				</div>
 				<div class="col-lg-7">
 					<div class="about-description skills">
-						<p class="p-heading"><p> I have my hands in many cookie jars, yet they are all related to technology! Software Engineer, Women In Tech Influencer, Tech Evangelist and Youtube Personality. With my approachable demanor and positive attitude, I try to encourge others to dive deep into tech and be curious with code.</p></p>
+						<p class="p-heading"><p> I have my hands in many cookie jars, yet they are all related to technology! Software Engineer, Women In Tech Influencer, Tech Evangelist and Youtube Personality. With my approachable demanor and positive attitude, I try to encourge others to dive deep into tech and to be curious with code.</p></p>
 							<div class="skill-part">
 								<div class="row">
 								  <div class="column" >
@@ -172,69 +178,69 @@
 	<!-- End About Section -->
 
 
-
-	<!-- Start Personal Review Count Section -->
-	<section class="section-padding dark-review">
-		<div class="container">
-	</section>
-
 	<!-- End Personal Review Count Section -->
 
-	<div id="portfolio" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-				<div class="services-item">
-					<img src="http://www.thegamewiz.com/wp-content/uploads/2015/02/connect-four.png" alt="">
-					 <span>Connect4</span>
-					<ul>
-						<li>Date: July 2019<li>
-						<li>Category: Frontend</li>
-						<lil><a href="http://connect4_javascript.surge.sh/">Connect4</a></li>
-
-					</ul>
-				</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<div class="services-item">
-						<img src="https://redwhiteandgrew.files.wordpress.com/2013/02/screen-shot-2013-02-11-at-9-00-39-am.png" alt="">
-						<span>Mean Girls</span>
-						<ul>
-							<li>Date: Decemeber 2017<li>
-							<li>Category: UX/UI & Website/Mobile Design</li>
-							<lil><a href="http://mean-girls-ipsum.surge.sh/">Mean Girls</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-				<div class="services-item">
-					<span>Neverbored</span>
-					<img src="images/portfolio/neverbored.jpg" alt="">
-					<ul>
-						<li>Date: July 2017<li>
-						<li>Category: Fullstack</li>
-						<lil><a href="https://never-bored.herokuapp.com">NeverBored</a></li>
-
-
-					</ul>
-				</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-				<div class="services-item">
-					<img src="images/portfolio/nocjournal.jpg" alt="">
-					 <span>NocJournal</span>
-					<ul>
-						<li>Date: June 2017<li>
-						<li>Category: Fullstack</li>
-						<lil><a href="https://github.com/andromeda111/NocJournal">NocJournal</a></li>
-
-					</ul>
-				</div>
-				</div>
-			</div>
+		<div class="section-title">
+			<h2>Work Portfolio</h2>
 		</div>
-	</div>
+
+	<section id="portfolio">
+        <div class="container">
+            <div class="row text-center">
+							<div class="filters filter-button-group">
+				  		  <ul>
+				          <h4>
+
+				          <li class="active" data-filter="*">All</li>
+				          <li data-filter=".Frontend">Frontend</li>
+				          <li data-filter=".Features">Features</li>
+				          <li data-filter=".Fullstack">Fullstack</li>
+
+					  		  </h4>
+					      </ul>
+			    		</div>
+
+							<div class="content grid">
+								<div class="single-content Frontend grid-item">
+									<img class="p2" src="https://images.pexels.com/photos/369376/pexels-photo-369376.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+									<p>Jerk Response Generator</p>
+								</div>
+						</div>
+
+						<div class="single-content Frontend grid-item">
+							<a href="http://mean-girls-ipsum.surge.sh/">
+								<img class="p2"
+								src="https://images.pexels.com/photos/2351844/pexels-photo-2351844.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+							</a>
+							<p>Mean Girls Ipsum</p>
+						</div>
+
+					<div class="single-content Fullstack grid-item">
+						<a href="https://never-bored.herokuapp.com/">
+							<img class="p2"
+							src="https://images.pexels.com/photos/547116/pexels-photo-547116.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+						</a>
+						<p>Neverbored</p>
+					</div>
+
+					<div class="single-content Features Frontend grid-item">
+						<a href="http://connect4_javascript.surge.sh/">
+							<img class="p2"
+							src="https://target.scene7.com/is/image/Target/GUEST_8b325d83-f2fe-44f3-9cf7-017c474a01a7?wid=488&hei=488&fmt=pjpeg">
+						</a>
+						<p>Connect4</p>
+					</div>
+
+					<div class="single-content Fullstack grid-item">
+						<a href="https://github.com/andromeda111/NocJournal">
+							<img class="p2"
+							src="https://images.pexels.com/photos/1541216/pexels-photo-1541216.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></a>
+						<p>NocJournal</p>
+					</div>
+
+        </div>
+        </div>
+    </section>
 
 
 
@@ -296,6 +302,9 @@
 	<!-- Counter-up -->
 	<script src="js/jquery.counterup.min.js"></script>
 	<!-- Template Main Javascript File -->
+
 	<script src="js/main.js"></script>
+	<script src="js/isotope_filter.js"></script>
+
 </body>
 </html>
